@@ -1,0 +1,20 @@
+/**
+ * @Author: Nithin Sivakumar <Nithin>
+ * @Date:   2019-09-10T20:46:19-04:00
+ * @Last modified by:   Nithin
+ * @Last modified time: 2019-09-10T21:03:04-04:00
+ */
+
+ label,
+
+ textarea {
+     margin-left: 40px;
+ }
+
+ label {
+     margin: 0;
+     margin-bottom: 15px;
+     color: lighten(#3498db, 25%);
+     font-weight: 500;
+     font-size: 2.15em;
+ }

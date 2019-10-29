@@ -1,48 +1,139 @@
 </<!DOCTYPE html>
 <html lang="en" dir="ltr">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Review Analysis</title>
-        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-        <link rel="icon" href="favicon.ico" type="image/x-icon">
-        <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
-        <link rel="stylesheet" href="libs/font-awesome/css/font-awesome.min.css">
-        <link href="css/bootstrap.min.css" rel="stylesheet">
-        <link href="css/styles.css" rel="stylesheet">
-        <link href="css/custom.css" rel="stylesheet">
-    </head>
-    <body>
-        <header>
-            <ul id="menu" class="shadow">
-                <li>
-                    <a href="#about">About</a>
-                </li>
-                <li>
-                    <a href="#howitworks">How Stuff Works</a>
-                </li>
-                <li>
-                    <a href="#contact">Contact US</a>
-                </li>
-            </ul>
-        </header>
-        <!-- End header -->
-        <div id="lead">
-            <div id="lead-content">
-                <h2 style ="font-size:2em;" >Copy-paste an amazon review below to analyze:</h2>
-                <div class="content-area">
-                        <textarea id="story" name="story" rows="4" cols="85">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Review Analysis</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
+    <link rel="stylesheet" href="libs/font-awesome/css/font-awesome.min.css">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+    <link href="css/custom.css" rel="stylesheet">
+    <link href="css/custom-button.css" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <ul id="menu" class="shadow">
+            <li>
+                <a href="#about">About</a>
+            </li>
+            <li>
+                <a href="#howitworks">How Stuff Works</a>
+            </li>
+            <li>
+                <a href="#contact">Contact</a>
+            </li>
+        </ul>
+    </header>
+    <!-- End header -->
+    <div id="lead">
+        <div id="lead-content">
+            <h2 style="font-size:2em; color:#09475E">Enter an amazon review below to analyze:</h2>
+            <div class="content-area">
+                <textarea id="story" name="story" rows="4" cols="85" style="margin: 0px 0px 0px 40px; height: 143px; width: 630px;">
                         </textarea>
+            </div>
+            <p>
+                <a href="#" class="button">Analyze</a>
+                <a href="#" class="button gray" class="gray">Reset</a>
+            </p>
+        </div>
+        <!-- End #lead-content -->
+
+        <div id="lead-overlay"></div>
+
+
+        <!-- End #lead-down -->
+    </div>
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h2 class="heading">Opinion Mining</h2>
+                </div>
+                <div class="col-md-8">
+                    <p>
+                        Explain about the model flow.
+                    </p>
                 </div>
             </div>
-            <!-- End #lead-content -->
-
-            <div id="lead-overlay"></div>
-
-
-            <!-- End #lead-down -->
         </div>
+    </div>
+    <!-- End #about -->
 
-    </body>
+    <div id="howitworks">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h2 class="heading">How Stuff Works</h2>
+                </div>
+                <div class="col-md-8">
+                    <p>
+                        Explain about the background model.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End #about -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h2 class="heading">Contact Me</h2>
+                </div>
+                <div class="col-md-8">
+                    <p>
+                        Place a contact form and accept input.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End #about -->
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-5 copyright">
+                    <p>
+                        Copyright &copy; Nithin Sivakumar
+                    </p>
+                </div>
+                <div class="col-sm-2 top">
+                    <span id="to-top">
+                        <i class="fa fa-chevron-up" aria-hidden="true"></i>
+                    </span>
+                </div>
+                <div class="col-sm-5 social">
+                    <ul>
+                        <li>
+                            <a href="https://github.com/nithinsivakumar" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
+                        </li>
+                        <li>
+                            <a href="https://stackoverflow.com/users/7991925/nithin-sivakumar" target="_blank"><i class="fa fa-stack-overflow" aria-hidden="true"></i></a>
+                        </li>
+                        <li>
+                            <a href="https://www.linkedin.com/in/nithinsivakumar/" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                        </li>
+                        <li>
+                            <a href="https://www.facebook.com/nithinsivaku" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                        </li>
+                        <li>
+                            <a href="https://twitter.com/nithinsivaku" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- End footer -->
+</body>
+
 </html>

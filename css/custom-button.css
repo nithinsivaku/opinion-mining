@@ -1,0 +1,29 @@
+.button {
+    background: #76B3FA;
+    border-radius: 10px;
+    padding: 20px 60px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.45em;
+    margin: 0 15px;
+    height: 120vh;
+}
+
+.button:hover {
+    -webkit-animation: hover 1200ms linear 2 alternate;
+    animation: hover 1200ms linear 2 alternate;
+}
+
+.button:active {
+    -webkit-animation: active 1200ms ease 1 alternate;
+    animation: active 1200ms ease 1 alternate;
+    background: #5F9BE0;
+}
+
+.gray {
+    background: #D2D2D2;
+}
+
+.gray:active {
+    background: #b9b9b9;
+}

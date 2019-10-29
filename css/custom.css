@@ -5,16 +5,20 @@
  * @Last modified time: 2019-09-10T21:03:04-04:00
  */
 
- label,
+label,
+textarea {
+    margin-left: 40px;
+    width: 100%
+}
 
- textarea {
-     margin-left: 40px;
- }
+label {
+    margin: 0;
+    margin-bottom: 15px;
+    color: lighten(#3498db, 25%);
+    font-weight: 500;
+    font-size: 2.15em;
+}
 
- label {
-     margin: 0;
-     margin-bottom: 15px;
-     color: lighten(#3498db, 25%);
-     font-weight: 500;
-     font-size: 2.15em;
- }
+h2 {
+    color: red;
+}

@@ -1,5 +1,4 @@
 var process_input = function() {
-    console.log("handle");
     var url = '/';
     var data = document.getElementById("text_input").value;
     $.post(url, data, function(res) {

@@ -14,33 +14,37 @@
     <link href="../static/styles/css/styles.css" rel="stylesheet">
     <link href="../static/styles/css/custom.css" rel="stylesheet">
     <link href="../static/styles/css/custom-button.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="../static/js/handler.js"></script>
 </head>
 
 <body>
     <header>
         <ul id="menu" class="shadow">
             <li>
-                <a href="#about">About</a>
-            </li>
-            <li>
                 <a href="#howitworks">How Stuff Works</a>
-            </li>
-            <li>
-                <a href="#contact">Contact</a>
             </li>
         </ul>
     </header>
     <!-- End header -->
     <div id="lead">
         <div id="lead-content">
-            <h2 style="font-size:2em; color:#09475E">Enter an amazon review below to analyze:</h2>
-            <div class="content-area">
-                <textarea id="story" name="story" rows="4" cols="85" style="margin: 0px 0px 0px 40px; height: 143px; width: 630px;">
-                        </textarea>
-            </div>
+            <form method="POST">
+                <h2 style="font-size:2em; color:#09475E">Enter an amazon review below to analyze:</h2>
+                <div class="content-area">
+                    <textarea id="text_input" name="story" rows="4" cols="85" style="margin: 0px 0px 0px 40px; height: 143px; width: 630px;">
+                            </textarea>
+                </div>
+                <br>
+                <br>
+                <p>
+                    <a href="#" class="button" onclick="process_input()">Analyze</a>
+                    <a href="#" class="button gray" onclick="clear_input()">Reset</a>
+                </p>
+            </form>
             <p>
-                <a href="#" class="button">Analyze</a>
-                <a href="#" class="button gray" class="gray">Reset</a>
+                <h2 align='center'>Result:</h2>
+                <h2 id=result align='center'></h2>
             </p>
         </div>
         <!-- End #lead-content -->

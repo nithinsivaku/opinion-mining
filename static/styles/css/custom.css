@@ -26,3 +26,16 @@ h2 {
 .modal-backdrop {
     z-index: -1;
 }
+
+.modal-dialog {
+    margin: 20vh auto 0px auto
+}
+
+.modal {
+    position: fixed;
+    top: -10%;
+}
+
+.modal-header {
+    background-color: chartreuse;
+}

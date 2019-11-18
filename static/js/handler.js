@@ -14,11 +14,13 @@ var process_input = function() {
         data: JSON.stringify(story),
         dataType: "json",
         success: function(res) {
-            document.getElementById("text_input").value = res.pred;
+            bgColor = res.pred == "positive" ? "#89a15d" : "#912f2f";
+            document.querySelector('.modal-header').style.backgroundColor = bgColor;
             $("#modal-title").text(res.pred.toString());
             $("#modal-body").text(res.pred.toString());
         },
         error: function(res) {
+            document.querySelector('.modal-header').style.backgroundColor = "#f57207";
             $("#modal-title").text(res.responseJSON.pred);
             $("#modal-body").text("Input content cannot be blank");
         }

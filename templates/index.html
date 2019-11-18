@@ -32,18 +32,21 @@
     <!-- End header -->
     <div id="lead">
         <div id="lead-content">
-            <h2 style="font-size:2em; color:#09475E">Enter an amazon review below to analyze:</h2>
-            <div class="content-area">
-                <textarea id="text_input" name="story" rows="4" cols="85" style="margin: 0px 0px 0px 40px; height: 143px; width: 630px;">
-                            </textarea>
-            </div>
-            <br>
-            <br>
-            <p>
-                <a href="#" class="button" onclick="process_input()" data-toggle="modal" data-target="#myModal">Analyze</a>
-                <a href="#" class="button gray" onclick="clear_input()">Reset</a>
-            </p>
+            <form>
+                <h2 style="font-size:2em; color:#09475E">Enter an amazon review below to analyze:</h2>
+                <div class="content-area">
+                    <textarea id="text_input" name="story" rows="4" cols="85" style="margin: 0px 0px 0px 40px; height: 143px; width: 630px;">
+                                                </textarea>
+                </div>
+                <br>
+                <br>
+                <p>
+                    <a href="#" class="button" onclick="process_input()" data-toggle="modal" data-target="#myModal">Analyze</a>
+                    <a href="#" class="button gray" onclick="clear_input()">Reset</a>
+                </p>
+            </form>
         </div>
+
         <!-- Modal -->
         <div class="modal fade" id="myModal" role="dialog">
             <div class="modal-dialog">
@@ -52,10 +55,10 @@
                 <div class="modal-content">
                     <div class="modal-header">
                         <button type="button" class="close" data-dismiss="modal">&times;</button>
-                        <h4 class="modal-title">Modal Header</h4>
+                        <h3 id="modal-title" class="modal-title">{{result}}</h3>
                     </div>
                     <div class="modal-body">
-                        <p>Some text in the modal.</p>
+                        <h4 id="modal-body" class="modal-title">{{result}}</h4>
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>

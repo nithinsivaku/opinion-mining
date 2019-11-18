@@ -13,10 +13,10 @@ app=Flask(__name__)
 def index():
     print("world")
     if request.method == "POST":
-        story = request.form.get('story')
+        story =  request.get_json()
         pred = "from flask"
-        if story:
-            return jsonify(pred)
+        if len(story['content']) != 0:
+            return jsonify(pred =  pred)
         else:
-            return jsonify(pred = 'Input needed')
+            return jsonify(pred = 'Input needed'), 500
     return flask.render_template('/index.html')

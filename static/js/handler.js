@@ -1,11 +1,33 @@
+/**
+ * Send input text to flask server
+ * Display the result in Modal
+ */
 var process_input = function() {
-    var url = '/';
-    var data = document.getElementById("text_input").value;
-    $.post(url, data, function(res) {
-        document.getElementById("text_input").value = res.pred;
+    var content = document.getElementById("text_input").value;
+    var data = JSON.stringify({ 'story': content });
+    var story = { "content": content };
+    $.ajax({
+        type: "POST",
+        contentType: "application/json;charset=utf-8",
+        url: "/",
+        traditional: "true",
+        data: JSON.stringify(story),
+        dataType: "json",
+        success: function(res) {
+            document.getElementById("text_input").value = res.pred;
+            $("#modal-title").text(res.pred.toString());
+            $("#modal-body").text(res.pred.toString());
+        },
+        error: function(res) {
+            $("#modal-title").text(res.responseJSON.pred);
+            $("#modal-body").text("Input content cannot be blank");
+        }
     });
 }
 
+/**
+ * clear entered content
+ */
 var clear_input = function() {
     console.log("reset");
     document.getElementById("text_input").value = "";

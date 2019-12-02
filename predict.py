@@ -14,7 +14,7 @@ def index():
     print("world")
     if request.method == "POST":
         story =  request.get_json()
-        pred = "from flask"
+        pred = "Negative Review"
         if len(story['content']) != 0:
             return jsonify(pred =  pred)
         else:

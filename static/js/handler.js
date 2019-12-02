@@ -17,7 +17,7 @@ var process_input = function() {
             bgColor = res.pred == "positive" ? "#89a15d" : "#912f2f";
             document.querySelector('.modal-header').style.backgroundColor = bgColor;
             $("#modal-title").text(res.pred.toString());
-            $("#modal-body").text(res.pred.toString());
+            $("#modal-body").text("This review content appears to be fake");
         },
         error: function(res) {
             document.querySelector('.modal-header').style.backgroundColor = "#f57207";

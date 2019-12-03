@@ -14,10 +14,14 @@ var process_input = function() {
         data: JSON.stringify(story),
         dataType: "json",
         success: function(res) {
-            bgColor = res.pred == "positive" ? "#89a15d" : "#912f2f";
+            bgColor = res.pred == "Positive Content" ? "#89a15d" : "#912f2f";
             document.querySelector('.modal-header').style.backgroundColor = bgColor;
-            $("#modal-title").text(res.pred.toString());
-            $("#modal-body").text("This review content appears to be fake");
+            $("#modal-title").text(res.pred);
+            if (bgColor == "#89a15d") {
+                $("#modal-body").text("This review can be trusted. ");
+            } else {
+                $("#modal-body").text("This review content appears to be fake. ");
+            }
         },
         error: function(res) {
             document.querySelector('.modal-header').style.backgroundColor = "#f57207";

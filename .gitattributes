@@ -1,3 +1,2 @@
 static/* linguist-vendored
-*.js linguist-vendored=false
-*.py linguist-vendored=false
+*.html linguist-detectable=false

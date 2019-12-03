@@ -4,7 +4,7 @@ import numpy as np
 import flask
 import pickle
 from sklearn.feature_extraction.text import CountVectorizer
-from flask import Flask, render_template, request, jsonify
+from flask import Flask, render_template, request, jsonify, send_from_directory
 
 # creating instance of the class
 app=Flask(__name__)
@@ -14,6 +14,10 @@ with open("Models/train.pkl", "rb") as f:
 cv=CountVectorizer()
 cv.fit_transform(train_a)
 
+@app.route('/favicon.ico')
+def favicon():
+    return send_from_directory(os.path.join(app.root_path, 'static', 'styles', 'images'),
+                               'favicon.ico')
 
 # tell flask what url shoud trigger the function index()
 @app.route('/',methods= ["GET", "POST"])

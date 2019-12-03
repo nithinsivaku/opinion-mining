@@ -1,5 +1,5 @@
 # opinion-mining
-A web application built using flask takes advantage of pre trained machine learning model to predict the quality of the amazon user reviews.
+A web application built using flask that takes advantage of pre trained machine learning model to predict the quality of the amazon user reviews.
 
 # Installation Instructions
 

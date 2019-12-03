@@ -1,5 +1,6 @@
 #!/bin/sh
 install_dependencies() {
+    pip3 install flask
     python3 -m venv venv
     source venv/bin/activate
 }

@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="libs/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="../static/styles/libs/font-awesome/css/font-awesome.min.css">
     <link href="../static/styles/css/bootstrap.min.css" rel="stylesheet">
     <link href="../static/styles/css/styles.css" rel="stylesheet">
@@ -33,10 +34,9 @@
     <div id="lead">
         <div id="lead-content">
             <form>
-                <h2 style="font-size:2em; color:#09475E">Enter an amazon review below to analyze:</h2>
+                <h2 style="font-size:2em; color:rgb(7, 81, 219)">Enter a review content below to analyze</h2>
                 <div class="content-area">
-                    <textarea id="text_input" name="story" rows="4" cols="85" style="margin: 0px 0px 0px 40px; height: 143px; width: 630px;">
-                                                </textarea>
+                    <textarea id="text_input" name="story" rows="4" cols="85" style="margin: 0px 0px 0px 40px; height: 143px; width: 630px;"></textarea>
                 </div>
                 <br>
                 <br>
@@ -83,8 +83,12 @@
                     <h2 class="heading">Opinion Mining</h2>
                 </div>
                 <div class="col-md-8">
-                    <p>
-                        Explain about the model flow.
+                    <p align="justify">
+                        Sentiment analysis a.k.a opinion mining, is an approach to natural language processing (NLP) that identifies the emotional tone behind a body of text. Simply put, it is the process of analyzing text data and classifying options as negative, positive or
+                        neutral. <br> In the examples below, the bolded items are emotional tone for the corresponding text. The highlighted items are attributes or keywords used to identify the expression behind the text. <br><br>
+                        <i>  text I: </i>&nbsp; My experience so far has been <span style="background-color:#c3f7c3">fantastic!</span>, <b>Positive</b><br>
+                        <i> text II: </i>&nbsp; The product is <span style="background-color:#f7efb7">ok I guess</span>, <b>Neutral</b><br>
+                        <i>text III: </i>&nbsp; Your dev team is <span style="background-color:#f7a7a6">useless!</span>, <b>Negative</b>
                     </p>
                 </div>
             </div>
@@ -100,28 +104,17 @@
                 </div>
                 <div class="col-md-8">
                     <p>
-                        Explain about the background model.
+                        <img src="../static/styles/images/stuffworks.png" width="500" height="333">
+                        <p align="justify">
+                            <br> In the training process (a), our model learns to associate a particular input (i.e. a text) to the corresponding output (tag) based on the test samples used for training. The feature extractor transfers the text input
+                            into a feature vector. Pairs of feature vectors and tags (e.g. positive, negative, or neutral) are fed into the machine learning algorithm to generate a model.
+                            <br><br> In the prediction process (b), the feature extractor is used to transform unseen text inputs into feature vectors. These feature vectors are then fed into the model, which generates predicted tags (again, positive,
+                            negative, or neutral).</p>
                     </p>
                 </div>
             </div>
         </div>
     </div>
-    <!-- End #about -->
-    <div id="contact">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-4">
-                    <h2 class="heading">Contact Me</h2>
-                </div>
-                <div class="col-md-8">
-                    <p>
-                        Place a contact form and accept input.
-                    </p>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- End #about -->
 
     <footer>
         <div class="container">
@@ -130,11 +123,6 @@
                     <p>
                         Copyright &copy; Nithin Sivakumar
                     </p>
-                </div>
-                <div class="col-sm-2 top">
-                    <span id="to-top">
-                        <i class="fa fa-chevron-up" aria-hidden="true"></i>
-                    </span>
                 </div>
                 <div class="col-sm-5 social">
                     <ul>

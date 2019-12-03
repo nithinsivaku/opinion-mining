@@ -4,7 +4,7 @@ A web application built using flask that takes advantage of pre trained machine 
 # Installation Instructions
 
 ### Requirements
-  1. Python3, click [here](https://realpython.com/installing-python/) to install and setup in your machine
+  1. Python3, click [here](https://realpython.com/installing-python/) for instructions to install and setup in your machine
 ### Steps To Reproduce
   1. open the terminal
   2. clone this repository by ```https://github.com/nithinsivakumar/opinion-mining```

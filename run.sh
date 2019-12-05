@@ -1,7 +1,6 @@
 #!/bin/sh
 install_dependencies() {
     pip3 install flask
-    pip3 install -U scikit-learn
     python3 -m venv venv
     source venv/bin/activate
 }

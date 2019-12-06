@@ -1,6 +1,6 @@
 # opinion-mining
-A web application built using flask that takes advantage of pre trained machine learning model to predict the quality of the amazon user reviews. Deployed on heroku [Review Predictor](https://reviewpredictor.herokuapp.com/)
-
+[Review Predictor](https://reviewpredictor.herokuapp.com/)
+A web application built using flask that takes advantage of pre trained machine learning model to predict the quality of the amazon user reviews.\
 Follow the below instructions to host it in your lcoal server.
 
 # Installation Instructions

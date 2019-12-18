@@ -7,6 +7,7 @@ Follow the below instructions to host it in your lcoal server.
 
 ### Requirements
   1. Python3, click [here](https://realpython.com/installing-python/) for instructions to install and setup in your machine
+  2. OS :- Debian-Based (Debian, Ubuntu, Linux Mint, etc.)
 ### Steps To Reproduce
   1. open the terminal
   2. clone this repository by ```https://github.com/nithinsivakumar/opinion-mining```
